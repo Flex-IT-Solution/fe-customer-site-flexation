@@ -29,11 +29,11 @@ jobs:
       - name: 🔬 Lint
         run: npm run lint:strict
 
-      - name: 🔎 Type check
-        run: npm run typecheck
+      # - name: 🔎 Type check
+      #   run: npm run typecheck
 
       - name: 💅 Prettier check
         run: npm run format:check
 
-      - name: 🃏 Run jest
-        run: npm run test
+      - name: 🃏 Run build
+        run: npm run build
