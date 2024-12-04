@@ -1,4 +1,4 @@
-// import Link from "next/link";
+import Link from 'next/link';
 
 import {
   NavigationMenu,
@@ -6,37 +6,28 @@ import {
   NavigationMenuList,
 } from '@/components/ui/navigation-menu';
 
-// const navigation : { title : string; href : string; icon? : React.ReactNode }[] = [
-//   {
-//     title: "Beranda",
-//     href: "/",
-//     // icon: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
-//   },
-//   {
-//     title : "Tema Undangan",
-//     href : "/tema-undangan"
-//   },
-//   {
-//     title : "Filter Instagram",
-//     href : "/filter"
-//   }
-// ]
-
 export function Navbar() {
   return (
-    // <nav>
-    //   <ul className="flex gap-2">
-    //     {navigation.map((item, index) => (
-    //       <li key={index}>
-    //         <a href={item.herf}>{item.title}</a>
-    //       </li>
-    //     ))}
-    //   </ul>
-    // </nav>
-    <NavigationMenu>
+    <NavigationMenu className='flex min-w-full items-center justify-between py-3 lg:px-28 xl:px-28 2xl:px-32'>
       <NavigationMenuList>
         <NavigationMenuItem>
-          {/* <Link href={navigation}></Link> */}
+          <Link href='/'>Logo</Link>
+        </NavigationMenuItem>
+      </NavigationMenuList>
+      <NavigationMenuList className='flex gap-4'>
+        <NavigationMenuItem>
+          <Link href='/'>Beranda</Link>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <Link href='/tema-undangan'>Tema Undangan</Link>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <Link href='/filter'>Filter</Link>
+        </NavigationMenuItem>
+      </NavigationMenuList>
+      <NavigationMenuList>
+        <NavigationMenuItem>
+          <Link href='/login'>Login</Link>
         </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>
