@@ -3,7 +3,8 @@ import * as React from 'react';
 
 import '@/styles/globals.css';
 
-import { Navbar } from '@/components/navber-menubar/navbar';
+import BottomMenu from '@/components/navigation/bottom-menu';
+import { Navbar } from '@/components/navigation/navbar';
 
 // !STARTERCONF This is for demo purposes, remove @/styles/colors.css import immediately
 import { siteConfig } from '@/constant/config';
@@ -21,9 +22,9 @@ export const metadata: Metadata = {
   // !STARTERCONF this is the default favicon, you can generate your own from https://realfavicongenerator.net/
   // ! copy to /favicon folder
   icons: {
-    icon: '/favicon/favicon.ico',
-    shortcut: '/favicon/favicon-16x16.png',
-    apple: '/favicon/apple-touch-icon.png',
+    icon: '/svg/LogoFlexation.svg',
+    shortcut: '/svg/LogoFlexation.svg',
+    apple: '/svg/LogoFlexation.svg',
   },
   manifest: `/favicon/site.webmanifest`,
   openGraph: {
@@ -40,11 +41,11 @@ export const metadata: Metadata = {
     title: siteConfig.title,
     description: siteConfig.description,
     images: [`${siteConfig.url}/images/og.jpg`],
-    // creator: '@th_clarence',
+    creator: 'FLEXATION x FlexDev',
   },
   authors: [
     {
-      name: 'FLEXATION',
+      name: 'FLEXATION x FlexDev',
       url: 'https://flexation.id',
     },
   ],
@@ -57,9 +58,14 @@ export default function RootLayout({
 }) {
   return (
     <html>
-      <body>
-        <Navbar />
+      <body className='relative'>
+        <div className='fixed left-0 right-0 top-0 z-50'>
+          <Navbar />
+        </div>
         {children}
+        <div className='fixed bottom-2 left-0 right-0 z-50 lg:hidden'>
+          <BottomMenu />
+        </div>
       </body>
     </html>
   );
