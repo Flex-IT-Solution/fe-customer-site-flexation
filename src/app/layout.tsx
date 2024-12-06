@@ -63,7 +63,7 @@ export default function RootLayout({
         <div className='fixed left-0 right-0 top-0 z-50'>
           <Navbar />
         </div>
-        {children}
+        <div className='min-h-16'>{children}</div>
         <div className='fixed bottom-2 left-0 right-0 z-50 lg:hidden'>
           <BottomMenu />
         </div>
