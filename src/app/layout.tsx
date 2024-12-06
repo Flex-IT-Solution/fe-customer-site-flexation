@@ -3,6 +3,7 @@ import * as React from 'react';
 
 import '@/styles/globals.css';
 
+import Footer from '@/components/Footer';
 import BottomMenu from '@/components/navigation/bottom-menu';
 import { Navbar } from '@/components/navigation/navbar';
 
@@ -58,7 +59,7 @@ export default function RootLayout({
 }) {
   return (
     <html>
-      <body className='relative'>
+      <body className='no-scrollbar relative overflow-x-hidden'>
         <div className='fixed left-0 right-0 top-0 z-50'>
           <Navbar />
         </div>
@@ -66,6 +67,7 @@ export default function RootLayout({
         <div className='fixed bottom-2 left-0 right-0 z-50 lg:hidden'>
           <BottomMenu />
         </div>
+        <Footer />
       </body>
     </html>
   );
