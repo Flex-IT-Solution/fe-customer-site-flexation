@@ -8,6 +8,7 @@ export default {
     extend: {
       fontFamily: {
         primary: ['Inter', ...defaultTheme.fontFamily.sans],
+        secondary: ['Cormorant Infant', 'serif'],
       },
       colors: {
         primary: {
