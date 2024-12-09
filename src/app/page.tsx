@@ -1,4 +1,5 @@
 'use client';
+import { Globe } from 'lucide-react';
 import * as React from 'react';
 import '@/lib/env';
 
@@ -22,12 +23,38 @@ export default function HomePage() {
           </div>
 
           <div className='py-10'>
-            <Button className='scroll-button rounded-full bg-gray-200 px-5 py-3 text-xs font-semibold text-red-950 transition duration-200 ease-in-out hover:bg-red-900 hover:text-white'>
-              Pilih Desain Impianmu
-            </Button>
+            <Button variant='default'>Pilih Desain Impianmu</Button>
           </div>
         </div>
       </div>
+
+      {/* fitur  */}
+      <div className='px-10 py-20 md:px-32'>
+        <div className='text-center'>
+          <div className='font-secondary text-3xl font-bold text-red-950'>
+            Fitur Undangan Digital Terbaik
+          </div>
+          <div className='text-lg text-neutral-600'>
+            Berbagai macam fitur terbaik undangan online yang Anda butuhkan ada
+            disini dan <br /> kami akan selalu berinovasi menambahkan
+            fitur-fitur lainnya
+          </div>
+        </div>
+        <div className='grid grid-cols-4'>
+          <div className='space-y-1 rounded-lg bg-red-100 p-4'>
+            <div className='w-fit rounded-full bg-red-300 p-2 text-sm text-red-700'>
+              <Globe />
+            </div>
+            <div className='font-medium'>Domain Esklusif</div>
+            <div className='text-sm'>
+              Menggunakan mekanisme subdomain dan tersedia penambahan add-on
+              custom domain
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* testimoni */}
       <div className='items-center gap-10 space-y-2 p-10 px-10 md:grid md:grid-flow-col md:space-y-0 lg:px-32'>
         <div className='w-fit space-y-2 text-center'>
           <div className='font-secondary text-xl font-semibold text-red-950 md:text-2xl'>
