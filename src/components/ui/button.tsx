@@ -10,7 +10,7 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          'bg-primary text-primary-foreground shadow hover:bg-primary/90',
+          'scroll-button rounded-full bg-gray-200 px-5 py-3 text-xs font-semibold text-red-950 transition duration-200 ease-in-out hover:bg-red-900 hover:text-white',
         destructive:
           'bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90',
         outline:
