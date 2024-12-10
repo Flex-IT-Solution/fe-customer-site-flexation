@@ -16,7 +16,14 @@ import * as React from 'react';
 import '@/lib/env';
 
 import FiturCard from '@/components/card/fitur.card';
+import TemaCard from '@/components/card/tema.card';
 import { Button } from '@/components/ui/button';
+
+import AidaAndrian from '~/images/Aida&Andrian.png';
+import ArulTina from '~/images/Arul&Tina.png';
+import HanaJuke from '~/images/Hana&Jake.png';
+import KamilIsna from '~/images/Kamil&Isna.png';
+import MitaAngga from '~/images/Mita&Angga.png';
 
 export default function HomePage() {
   return (
@@ -42,7 +49,7 @@ export default function HomePage() {
       </div>
 
       {/* fitur  */}
-      <div className='space-y-5 px-10 py-20 md:px-32'>
+      <div className='space-y-5 px-5 py-20 md:px-32'>
         <div className='text-center'>
           <div className='font-secondary text-2xl font-bold text-red-950 md:text-3xl'>
             Fitur Undangan Digital Terbaik
@@ -118,7 +125,49 @@ export default function HomePage() {
       </div>
 
       {/* tema-undangan  */}
-      <div></div>
+      <div className='space-y-5 bg-rose-100 px-5 py-20 md:px-32'>
+        <div className='text-center'>
+          <div className='font-secondary text-2xl font-bold text-red-950 md:text-3xl'>
+            Pilih Tema Undangan Ekslusif
+          </div>
+          <div className='text-xs text-neutral-600 md:text-lg'>
+            Pilih tema sesukamu, ganti tema sesukamu, tanpa edit, tanpa antri,
+            Langsung Jadi!
+          </div>
+        </div>
+        <div className='grid grid-cols-1 gap-5 md:grid-cols-2'>
+          <TemaCard
+            imageSrc={AidaAndrian}
+            alt='Tema Undangan Aida & Andrian'
+            title='Aida & Andrian'
+            demoLink='https://flexation.web.id/aida-andrian/'
+          />
+          <TemaCard
+            imageSrc={KamilIsna}
+            alt='Tema Undangan Kamil & Isna'
+            title='Kamil & Isna'
+            demoLink='https://flexation.web.id/kamil-isna?tamu=Nama+Tamu'
+          />
+          <TemaCard
+            imageSrc={ArulTina}
+            alt='Tema Undangan Arul & Tina'
+            title='Arul & Tina'
+            demoLink='https://webundangan.vercel.app/'
+          />
+          <TemaCard
+            imageSrc={HanaJuke}
+            alt='Tema Undangan Hana & Jake'
+            title='Hana & Jake'
+            demoLink='https://dev.flexation.site/theme-4/'
+          />
+          <TemaCard
+            imageSrc={MitaAngga}
+            alt='Tema Undangan Mita & Angga'
+            title='Mita & Angga'
+            demoLink='https://dev.flexation.site/theme-5/'
+          />
+        </div>
+      </div>
 
       {/* testimoni */}
       <div className='items-center gap-10 space-y-2 p-10 px-10 md:grid md:grid-flow-col md:space-y-0 lg:px-32'>
