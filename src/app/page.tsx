@@ -1,8 +1,9 @@
 'use client';
-import { Globe } from 'lucide-react';
+import { Globe, Users } from 'lucide-react';
 import * as React from 'react';
 import '@/lib/env';
 
+import FiturCard from '@/components/card/fitur.card';
 import { Button } from '@/components/ui/button';
 
 export default function HomePage() {
@@ -29,28 +30,28 @@ export default function HomePage() {
       </div>
 
       {/* fitur  */}
-      <div className='px-10 py-20 md:px-32'>
+      <div className='space-y-5 px-10 py-20 md:px-32'>
         <div className='text-center'>
-          <div className='font-secondary text-3xl font-bold text-red-950'>
+          <div className='font-secondary text-2xl font-bold text-red-950 md:text-3xl'>
             Fitur Undangan Digital Terbaik
           </div>
-          <div className='text-lg text-neutral-600'>
+          <div className='text-xs text-neutral-600 md:text-lg'>
             Berbagai macam fitur terbaik undangan online yang Anda butuhkan ada
-            disini dan <br /> kami akan selalu berinovasi menambahkan
-            fitur-fitur lainnya
+            disini dan <br className='hidden lg:inline' /> kami akan selalu
+            berinovasi menambahkan fitur-fitur lainnya
           </div>
         </div>
-        <div className='grid grid-cols-4'>
-          <div className='space-y-1 rounded-lg bg-red-100 p-4'>
-            <div className='w-fit rounded-full bg-red-300 p-2 text-sm text-red-700'>
-              <Globe />
-            </div>
-            <div className='font-medium'>Domain Esklusif</div>
-            <div className='text-sm'>
-              Menggunakan mekanisme subdomain dan tersedia penambahan add-on
-              custom domain
-            </div>
-          </div>
+        <div className='grid grid-cols-2 gap-5 md:grid-cols-3 lg:grid-cols-4'>
+          <FiturCard
+            icon={<Globe />}
+            title='Domain Eksklusif'
+            description='Menggunakan mekanisme subdomain dan tersedia penambahan add-on custom domain'
+          />
+          <FiturCard
+            icon={<Users />}
+            title='Custom Nama Tamu'
+            description='Satu tamu, satu undangan. Selayaknya undangan pernikahan fisik'
+          />
         </div>
       </div>
 
