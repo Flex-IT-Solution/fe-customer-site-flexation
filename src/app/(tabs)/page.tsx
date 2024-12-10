@@ -1,5 +1,5 @@
 'use client';
-import { Globe, Users } from 'lucide-react';
+import { Globe, Pencil, Users, Zap } from 'lucide-react';
 import * as React from 'react';
 import '@/lib/env';
 
@@ -51,6 +51,26 @@ export default function HomePage() {
             icon={<Users />}
             title='Custom Nama Tamu'
             description='Satu tamu, satu undangan. Selayaknya undangan pernikahan fisik'
+          />
+          <FiturCard
+            icon={<Pencil />}
+            title='Full Custom Teks'
+            description='Seluruh teks pada undangan dapat Anda ubah sesuai keinginan'
+          />
+          <FiturCard
+            icon={<Zap />}
+            title='Shareblast (Beta)'
+            description='Bagi undangan kepada seluruh tamu terdaftar dari WhatsApp hanya dengan 1 kali klik'
+          />
+          <FiturCard
+            icon={<Zap />}
+            title='Konten Lengkap'
+            description='Tersedia berbagai jenis konten baik teks, gambar, link, peta, musik hingga video'
+          />
+          <FiturCard
+            icon={<Zap />}
+            title='Shareblast (Beta)'
+            description='Bagi undangan kepada seluruh tamu terdaftar dari WhatsApp hanya dengan 1 kali klik'
           />
         </div>
       </div>
