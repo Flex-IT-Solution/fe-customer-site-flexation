@@ -1,5 +1,17 @@
 'use client';
-import { Globe, Pencil, Users, Zap } from 'lucide-react';
+import {
+  Banknote,
+  BookUser,
+  Gift,
+  Globe,
+  Megaphone,
+  Music,
+  Palette,
+  Pencil,
+  Timer,
+  Users,
+  Zap,
+} from 'lucide-react';
 import * as React from 'react';
 import '@/lib/env';
 
@@ -63,14 +75,44 @@ export default function HomePage() {
             description='Bagi undangan kepada seluruh tamu terdaftar dari WhatsApp hanya dengan 1 kali klik'
           />
           <FiturCard
-            icon={<Zap />}
+            icon={<Music />}
             title='Konten Lengkap'
             description='Tersedia berbagai jenis konten baik teks, gambar, link, peta, musik hingga video'
           />
           <FiturCard
-            icon={<Zap />}
-            title='Shareblast (Beta)'
-            description='Bagi undangan kepada seluruh tamu terdaftar dari WhatsApp hanya dengan 1 kali klik'
+            icon={<Palette />}
+            title='Tema Instan'
+            description='Tersedia berbagai macam tema siap pakai yang dapat diganti kapan saja tanpa batas'
+          />
+          <FiturCard
+            icon={<Palette />}
+            title='Manajemen Tamu'
+            description='Fitur pengaturan tamu baik personal / grup sesuai preferensi (undangan / informasi)'
+          />
+          <FiturCard
+            icon={<BookUser />}
+            title='Reservasi & Buku Tamu'
+            description='Fitur penerima ucapan dari tamu dan konfirmasi kehadiran dengan manajemen data yang baik'
+          />
+          <FiturCard
+            icon={<Banknote />}
+            title='Pembayaran Mudah'
+            description='Pembayaran dapat dilakukan kapan saja, mudah, otomatis dengan metode pembayaran yang lengkap'
+          />
+          <FiturCard
+            icon={<Megaphone />}
+            title='Story & Quotes'
+            description='Ceritakan perjalanan / deskripsi undangan Anda & tambahkan quotes kepada tamu undangan'
+          />
+          <FiturCard
+            icon={<Gift />}
+            title='Hadiah'
+            description='Tersedia fitur kirim hadiah secara online ke rekening kamu atau alamat melalui undanganmu'
+          />
+          <FiturCard
+            icon={<Timer />}
+            title='Countdown Timer'
+            description='Tersedia fitur countdown timer yang dapat berfungsi sebagai pengingat waktu acara'
           />
         </div>
       </div>
@@ -95,13 +137,10 @@ export default function HomePage() {
               </div>
             </div>
             <div className='text-sm text-rose-950'>
-              Hi, terima kasih viding udah bantuin acara kita, kita dari awal
-              emang sudah memlih viding karena banyak teman artis sudah pakai
-              viding, semuanya oke servicenya cepet banget ada live streaming
-              juga, jadi teman teman yang ga bisa dating bisa menyaksikan juga
-              dan kita juga dapat recordnya jadi kalo mau nonton nikahan kita
-              secara lengkap tuh ada rekamannya, pokonya keren banget, sukses
-              selalu viding
+              Sangat memuaskan! Kami bisa custom undangan sesuai dengan tema
+              yang kami inginkan. Selain itu, layanan support dari tim Flexation
+              sangat ramah dan membantu. Terima kasih atas pengalaman yang luar
+              biasa ini!
             </div>
           </div>
         </div>
