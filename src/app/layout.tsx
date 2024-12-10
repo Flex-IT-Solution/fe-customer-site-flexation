@@ -4,7 +4,7 @@ import * as React from 'react';
 import '@/styles/globals.css';
 
 import Footer from '@/components/Footer';
-import BottomMenu from '@/components/navigation/bottom-menu';
+// import BottomMenu from '@/components/navigation/bottom-menu';
 import { Navbar } from '@/components/navigation/navbar';
 
 // !STARTERCONF This is for demo purposes, remove @/styles/colors.css import immediately
@@ -64,9 +64,9 @@ export default function RootLayout({
           <Navbar />
         </div>
         <div className='min-h-screen'>{children}</div>
-        <div className='fixed bottom-2 left-0 right-0 z-50 lg:hidden'>
+        {/* <div className='fixed bottom-2 left-0 right-0 z-50 lg:hidden'>
           <BottomMenu />
-        </div>
+        </div> */}
         <Footer />
       </body>
     </html>
