@@ -17,18 +17,22 @@ export default function TemaCard({
   alt,
   title,
   demoLink,
-  orderLink = 'https://wa.me/6285732705891',
 }: WeddingCardProps) {
   return (
-    <div className='space-y-2 rounded-lg bg-red-50 p-3'>
+    <div
+      data-aos='fade-up'
+      className='space-y-2 rounded-2xl bg-red-100 p-3 lg:p-4 xl:space-y-4 xl:p-5'
+    >
       <NextImage
         src={imageSrc}
         alt={alt}
         useSkeleton={true}
-        className='rounded-md'
+        classNames={{
+          image: 'rounded-lg',
+        }}
       />
       <div className='flex items-center justify-between'>
-        <div className='font-secondary text-lg font-semibold text-rose-800'>
+        <div className='font-secondary text-lg font-semibold text-rose-800 xl:text-2xl'>
           {title}
         </div>
         <div className='flex gap-2'>
@@ -37,7 +41,7 @@ export default function TemaCard({
               Demo
             </Button>
           </Link>
-          <Link href={orderLink}>
+          <Link href='https://wa.me/6285732705891'>
             <Button className='bg-rose-800 text-white hover:bg-rose-600 hover:text-rose-100'>
               Pesan
             </Button>

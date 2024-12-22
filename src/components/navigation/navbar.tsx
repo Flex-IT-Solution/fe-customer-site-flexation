@@ -16,7 +16,7 @@ export function Navbar() {
   const isActive = (href: string) => pathname === href;
 
   return (
-    <NavigationMenu className='flex min-w-full items-center justify-between bg-red-50 px-5 py-3 text-sm text-red-900 lg:px-28 xl:px-28 2xl:px-32'>
+    <NavigationMenu className='flex min-w-full items-center justify-between bg-red-100 px-5 py-3 text-sm text-red-900 lg:px-28 xl:px-28 xl:py-5 xl:text-base'>
       <NavigationMenuList>
         <NavigationMenuItem>
           <Link href='/'>

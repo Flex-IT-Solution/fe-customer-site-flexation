@@ -17,7 +17,10 @@ import '@/lib/env';
 
 import FiturCard from '@/components/card/fitur.card';
 import TemaCard from '@/components/card/tema.card';
+import TestimonialCard from '@/components/card/testimonial.card';
 import { Button } from '@/components/ui/button';
+
+import { useAOS } from '@/hook/useAos';
 
 import AidaAndrian from '~/images/Aida&Andrian.png';
 import ArulTina from '~/images/Arul&Tina.png';
@@ -26,13 +29,14 @@ import KamilIsna from '~/images/Kamil&Isna.png';
 import MitaAngga from '~/images/Mita&Angga.png';
 
 export default function HomePage() {
+  useAOS();
   return (
     <div>
       <div className='relative h-screen bg-[url(/images/banner.jpeg)] bg-cover bg-center'>
         <div className='absolute inset-0 z-10 min-h-screen bg-black opacity-50'></div>
 
         {/* banner  */}
-        <div className='relative z-20 grid min-h-screen content-center px-10 italic text-white lg:px-32'>
+        <div className='relative z-20 grid min-h-screen content-center px-10 italic text-white lg:px-32 xl:px-52'>
           <div>
             <div className='text-sm md:text-base'>Invitation Wedding</div>
             <div className='py-2 font-secondary text-3xl font-bold tracking-wide md:text-5xl lg:text-7xl'>
@@ -43,18 +47,26 @@ export default function HomePage() {
           </div>
 
           <div className='py-10'>
-            <Button variant='default'>Pilih Desain Impianmu</Button>
+            <a href='#tema'>
+              <Button variant='default'>Pilih Desain Impianmu</Button>
+            </a>
           </div>
         </div>
       </div>
 
       {/* fitur  */}
-      <div className='space-y-5 px-5 py-20 md:px-32'>
-        <div className='text-center'>
-          <div className='font-secondary text-2xl font-bold text-red-950 md:text-3xl'>
+      <div className='space-y-5 px-5 py-20 md:px-32 xl:px-52 xl:py-32'>
+        <div className='space-y-2 text-center'>
+          <div
+            data-aos='fade-up'
+            className='font-secondary text-2xl font-bold text-red-950 md:text-3xl'
+          >
             Fitur Undangan Digital Terbaik
           </div>
-          <div className='text-xs text-neutral-600 md:text-lg'>
+          <div
+            data-aos='fade-up'
+            className='text-xs text-neutral-600 md:text-lg'
+          >
             Berbagai macam fitur terbaik undangan online yang Anda butuhkan ada
             disini dan <br className='hidden lg:inline' /> kami akan selalu
             berinovasi menambahkan fitur-fitur lainnya
@@ -125,12 +137,21 @@ export default function HomePage() {
       </div>
 
       {/* tema-undangan  */}
-      <div className='space-y-5 bg-rose-100 px-5 py-20 md:px-32'>
-        <div className='text-center'>
-          <div className='font-secondary text-2xl font-bold text-red-950 md:text-3xl'>
+      <div
+        id='tema'
+        className='space-y-5 bg-rose-50 px-5 py-20 md:px-32 xl:px-52 xl:py-32'
+      >
+        <div className='space-y-2 text-center'>
+          <div
+            data-aos='fade-up'
+            className='font-secondary text-2xl font-bold text-red-950 md:text-3xl'
+          >
             Pilih Tema Undangan Ekslusif
           </div>
-          <div className='text-xs text-neutral-600 md:text-lg'>
+          <div
+            data-aos='fade-up'
+            className='text-xs text-neutral-600 md:text-lg'
+          >
             Pilih tema sesukamu, ganti tema sesukamu, tanpa edit, tanpa antri,
             Langsung Jadi!
           </div>
@@ -169,32 +190,27 @@ export default function HomePage() {
         </div>
       </div>
 
+      {/* Paket harga */}
+
       {/* testimoni */}
-      <div className='items-center gap-10 space-y-2 p-10 px-10 md:grid md:grid-flow-col md:space-y-0 lg:px-32'>
+      <div className='items-center gap-10 space-y-3 p-10 px-10 md:grid md:grid-flow-col md:space-y-0 lg:px-32 xl:px-52 xl:py-24'>
         <div className='w-fit space-y-2 text-center'>
           <div className='font-secondary text-xl font-semibold text-red-950 md:text-2xl'>
             Apa kata mereka tentang FLEXATION?
           </div>
-          <div className='text-base text-red-900'>
+          <div className='text-xs text-red-900 md:text-lg'>
             Sebarkan Undangan Anti Ribet <br />
             Satset terima beres Sebarkan Undangan Anti Ribet
           </div>
         </div>
         <div>
-          <div className='w-fit max-w-96 space-y-2 rounded-xl bg-red-100 p-3 px-5'>
-            <div className='flex items-end space-x-2'>
-              <div className='h-8 w-8 rounded-full bg-white'></div>
-              <div className='font-secondary font-semibold text-rose-800'>
-                Arul & Tina
-              </div>
-            </div>
-            <div className='text-sm text-rose-950'>
-              Sangat memuaskan! Kami bisa custom undangan sesuai dengan tema
+          <TestimonialCard
+            name='Arul & Tina'
+            testimonial='Sangat memuaskan! Kami bisa custom undangan sesuai dengan tema
               yang kami inginkan. Selain itu, layanan support dari tim Flexation
               sangat ramah dan membantu. Terima kasih atas pengalaman yang luar
-              biasa ini!
-            </div>
-          </div>
+              biasa ini!'
+          />
         </div>
       </div>
     </div>
