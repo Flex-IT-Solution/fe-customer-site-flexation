@@ -179,13 +179,13 @@ export default function HomePage() {
             imageSrc={HanaJuke}
             alt='Tema Undangan Hana & Jake'
             title='Hana & Jake'
-            demoLink='https://dev.flexation.site/theme-4/'
+            demoLink='https://akubetaa.github.io/und-2/'
           />
           <TemaCard
             imageSrc={MitaAngga}
             alt='Tema Undangan Mita & Angga'
             title='Mita & Angga'
-            demoLink='https://dev.flexation.site/theme-5/'
+            demoLink='https://akubetaa.github.io/und-1/'
           />
         </div>
       </div>
