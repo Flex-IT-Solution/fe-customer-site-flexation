@@ -27,6 +27,8 @@ import ArulTina from '~/images/Arul&Tina.png';
 import HanaJuke from '~/images/Hana&Jake.png';
 import KamilIsna from '~/images/Kamil&Isna.png';
 import MitaAngga from '~/images/Mita&Angga.png';
+import VeaAsh from '~/images/VeaAsh.png';
+import VeaLilac from '~/images/VeaLilac.png';
 
 export default function HomePage() {
   useAOS();
@@ -159,33 +161,45 @@ export default function HomePage() {
         <div className='grid grid-cols-1 gap-5 md:grid-cols-2'>
           <TemaCard
             imageSrc={AidaAndrian}
-            alt='Tema Undangan Aida & Andrian'
+            alt='Flexation.id - Tema Undangan Aida & Andrian'
             title='Aida & Andrian'
             demoLink='https://flexation.web.id/aida-andrian/'
           />
           <TemaCard
             imageSrc={KamilIsna}
-            alt='Tema Undangan Kamil & Isna'
+            alt='Flexation.id - Tema Undangan Kamil & Isna'
             title='Kamil & Isna'
             demoLink='https://flexation.web.id/kamil-isna?tamu=Nama+Tamu'
           />
           <TemaCard
+            imageSrc={VeaLilac}
+            alt='Flexation.id - Tema Undangan Vea Lilac'
+            title='Vea Lilac'
+            demoLink='https://flexation.vercel.app/vea-lilac'
+          />
+          <TemaCard
             imageSrc={ArulTina}
-            alt='Tema Undangan Arul & Tina'
+            alt='Flexation.id - Tema Undangan Arul & Tina'
             title='Arul & Tina'
             demoLink='https://webundangan.vercel.app/'
           />
           <TemaCard
             imageSrc={HanaJuke}
-            alt='Tema Undangan Hana & Jake'
+            alt='Flexation.id - Tema Undangan Hana & Jake'
             title='Hana & Jake'
             demoLink='https://akubetaa.github.io/und-2/'
           />
           <TemaCard
             imageSrc={MitaAngga}
-            alt='Tema Undangan Mita & Angga'
+            alt='Flexation.id - Tema Undangan Mita & Angga'
             title='Mita & Angga'
             demoLink='https://akubetaa.github.io/und-1/'
+          />
+          <TemaCard
+            imageSrc={VeaAsh}
+            alt='Flexation.id - Tema Undangan Vea Ash'
+            title='Vea Ash'
+            demoLink='https://akubetaa.github.io/undweb/vea-ash/'
           />
         </div>
       </div>
