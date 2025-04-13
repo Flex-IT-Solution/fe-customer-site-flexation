@@ -165,7 +165,7 @@ export default function HomePage() {
           <TemaCard
             imageSrc={AzuraMidnight}
             alt='Flexation.id - Tema Undangan Azura'
-            title='Aida & Andrian'
+            title='Azura Midnight'
             demoLink='https://akubetaa.github.io/fe-undangan-2/'
           />
           <TemaCard
@@ -183,13 +183,13 @@ export default function HomePage() {
           <TemaCard
             imageSrc={KaluraIvory}
             alt='Flexation.id - Tema Undangan Kaluna Ivory'
-            title='Kamil & Isna'
+            title='Kalura Ivory'
             demoLink='https://flexation.vercel.app/preview-riska-andri'
           />
           <TemaCard
             imageSrc={KaluraMist}
             alt='Flexation.id - Tema Undangan Kalura Mist'
-            title='Kamil & Isna'
+            title='Kalura Mist'
             demoLink='https://flexation.vercel.app/preview-riska-andri-ash'
           />
           <TemaCard
