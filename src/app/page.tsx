@@ -24,9 +24,12 @@ import { useAOS } from '@/hook/useAos';
 
 import AidaAndrian from '~/images/Aida&Andrian.png';
 import ArulTina from '~/images/Arul&Tina.png';
+import AzuraMidnight from '~/images/Azura-Midnight.png';
 import HanaJuke from '~/images/Hana&Jake.png';
+import KaluraIvory from '~/images/Kalura-Ivory.png';
+import KaluraMist from '~/images/Kalura-Mist.png';
 import KamilIsna from '~/images/Kamil&Isna.png';
-import MitaAngga from '~/images/Mita&Angga.png';
+// import MitaAngga from '~/images/Mita&Angga.png';
 import VeaAsh from '~/images/VeaAsh.png';
 import VeaLilac from '~/images/VeaLilac.png';
 
@@ -160,6 +163,12 @@ export default function HomePage() {
         </div>
         <div className='grid grid-cols-1 gap-5 md:grid-cols-2'>
           <TemaCard
+            imageSrc={AzuraMidnight}
+            alt='Flexation.id - Tema Undangan Azura'
+            title='Aida & Andrian'
+            demoLink='https://akubetaa.github.io/fe-undangan-2/'
+          />
+          <TemaCard
             imageSrc={AidaAndrian}
             alt='Flexation.id - Tema Undangan Aida & Andrian'
             title='Aida & Andrian'
@@ -172,10 +181,16 @@ export default function HomePage() {
             demoLink='https://flexation.web.id/kamil-isna?tamu=Nama+Tamu'
           />
           <TemaCard
-            imageSrc={VeaLilac}
-            alt='Flexation.id - Tema Undangan Vea Lilac'
-            title='Vea Lilac'
-            demoLink='https://flexation.vercel.app/vea-lilac'
+            imageSrc={KaluraIvory}
+            alt='Flexation.id - Tema Undangan Kaluna Ivory'
+            title='Kamil & Isna'
+            demoLink='https://flexation.vercel.app/preview-riska-andri'
+          />
+          <TemaCard
+            imageSrc={KaluraMist}
+            alt='Flexation.id - Tema Undangan Kalura Mist'
+            title='Kamil & Isna'
+            demoLink='https://flexation.vercel.app/preview-riska-andri-ash'
           />
           <TemaCard
             imageSrc={ArulTina}
@@ -190,10 +205,10 @@ export default function HomePage() {
             demoLink='https://akubetaa.github.io/und-2/'
           />
           <TemaCard
-            imageSrc={MitaAngga}
-            alt='Flexation.id - Tema Undangan Mita & Angga'
-            title='Mita & Angga'
-            demoLink='https://akubetaa.github.io/und-1/'
+            imageSrc={VeaLilac}
+            alt='Flexation.id - Tema Undangan Vea Lilac'
+            title='Vea Lilac'
+            demoLink='https://flexation.vercel.app/vea-lilac'
           />
           <TemaCard
             imageSrc={VeaAsh}
